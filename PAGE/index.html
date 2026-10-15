@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advice Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+```
+<main class="advice-container">
+    <div class="advice-card">
+
+        <h1 id="advice-id">ADVICE #117</h1>
+
+        <p id="advice-text" aria-live="polite">
+            Your advice will appear here.
+        </p>
+
+        <picture>
+            <source
+                media="(max-width: 480px)"
+                srcset="images/pattern-divider-mobile.svg">
+            <img
+                class="divider"
+                src="images/pattern-divider-desktop.svg"
+                alt="">
+        </picture>
+
+        <button id="advice-button" type="button"
+                aria-label="Generate new advice">
+            <img src="images/icon-dice.svg" alt="">
+        </button>
+
+        <p id="status-message" role="status" aria-live="polite"></p>
+
+    </div>
+</main>
+
+<script src="script.js"></script>
+```
+
+</body>
+</html>

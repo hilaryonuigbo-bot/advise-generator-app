@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+:root {
+--color-background: hsl(218, 23%, 16%);
+--color-card: hsl(217, 19%, 24%);
+--color-text: hsl(193, 38%, 86%);
+--color-accent: hsl(150, 100%, 66%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+min-height: 100vh;
+min-height: 100svh;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 24px;
+background-color: var(--color-background);
+font-family: 'Manrope', sans-serif;
+}
+
+.advice-container {
+width: 100%;
+max-width: 540px;
+}
+
+.advice-card {
+position: relative;
+width: 100%;
+padding: 48px 48px 72px;
+border-radius: 15px;
+background-color: var(--color-card);
+text-align: center;
+}
+
+#advice-id {
+margin-bottom: 24px;
+color: var(--color-accent);
+font-size: 13px;
+font-weight: 800;
+letter-spacing: 4px;
+text-transform: uppercase;
+}
+
+#advice-text {
+margin-bottom: 32px;
+color: var(--color-text);
+font-size: 28px;
+font-weight: 800;
+line-height: 1.5;
+overflow-wrap: anywhere;
+}
+
+picture {
+display: block;
+width: 100%;
+}
+
+.divider {
+display: block;
+width: 100%;
+height: auto;
+}
+
+#advice-button {
+position: absolute;
+bottom: -32px;
+left: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 64px;
+height: 64px;
+transform: translateX(-50%);
+border: none;
+border-radius: 50%;
+background-color: var(--color-accent);
+cursor: pointer;
+transition: box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+#advice-button img {
+width: 24px;
+height: 24px;
+}
+
+#advice-button:hover:not(:disabled) {
+box-shadow: 0 0 35px var(--color-accent);
+}
+
+#advice-button:focus-visible {
+outline: 3px solid white;
+outline-offset: 4px;
+}
+
+#advice-button:disabled {
+cursor: wait;
+opacity: 0.6;
+}
+
+#status-message {
+margin-top: 12px;
+color: var(--color-text);
+font-size: 12px;
+}
+
+#status-message:empty {
+display: none;
+}
+
+@media (max-width: 480px) {
+body {
+padding: 24px;
+}
+
+```
+.advice-card {
+    padding: 40px 24px 64px;
+    border-radius: 10px;
+}
+
+#advice-id {
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+#advice-text {
+    margin-bottom: 24px;
+    font-size: 24px;
+    line-height: 1.4;
+}
+
+#advice-button {
+    bottom: -32px;
+}
+```
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+#advice-button {
+transition: none;
+}
+}
